@@ -16,58 +16,58 @@ namespace kortlek21
 
             IList<Card> cardDeck = new List<Card>()
             {
-                           new Card(){ number = 1, colour = "H_A" },
-                           new Card(){ number = 2, colour = "H_2" },
-                           new Card(){ number = 3, colour = "H_3" },
-                           new Card(){ number = 4, colour = "H_4" },
-                           new Card(){ number = 5, colour = "H_5" },
-                           new Card(){ number = 6, colour = "H_6" },
-                           new Card(){ number = 7, colour = "H_7" },
-                           new Card(){ number = 8, colour = "H_8" },
-                           new Card(){ number = 9, colour = "H_9" },
-                           new Card(){ number = 10, colour = "H_10" },
-                           new Card(){ number = 11, colour = "H_J" },
-                           new Card(){ number = 12, colour = "H_Q" },
-                           new Card(){ number = 13, colour = "H_K" },
-                           new Card(){ number = 1, colour = "S_A" },
-                           new Card(){ number = 2, colour = "S_2" },
-                           new Card(){ number = 3, colour = "S_3" },
-                           new Card(){ number = 4, colour = "S_4" },
-                           new Card(){ number = 5, colour = "S_5" },
-                           new Card(){ number = 6, colour = "S_6" },
-                           new Card(){ number = 7, colour = "S_7" },
-                           new Card(){ number = 8, colour = "S_8" },
-                           new Card(){ number = 9, colour = "S_9" },
-                           new Card(){ number = 10, colour = "S_10" },
-                           new Card(){ number = 11, colour = "S_J" },
-                           new Card(){ number = 12, colour = "S_Q" },
-                           new Card(){ number = 13, colour = "S_K" },
-                           new Card(){ number = 1, colour = "D_A" },
-                           new Card(){ number = 2, colour = "D_2" },
-                           new Card(){ number = 3, colour = "D_3" },
-                           new Card(){ number = 4, colour = "D_4" },
-                           new Card(){ number = 5, colour = "D_5" },
-                           new Card(){ number = 6, colour = "D_6" },
-                           new Card(){ number = 7, colour = "D_7" },
-                           new Card(){ number = 8, colour = "D_8" },
-                           new Card(){ number = 9, colour = "D_9" },
-                           new Card(){ number = 10, colour = "D_10" },
-                           new Card(){ number = 11, colour = "D_J" },
-                           new Card(){ number = 12, colour = "D_Q" },
-                           new Card(){ number = 13, colour = "D_K" },
-                           new Card(){ number = 1, colour = "C_A" },
-                           new Card(){ number = 2, colour = "C_2" },
-                           new Card(){ number = 3, colour = "C_3" },
-                           new Card(){ number = 4, colour = "C_4" },
-                           new Card(){ number = 5, colour = "C_5" },
-                           new Card(){ number = 6, colour = "C_6" },
-                           new Card(){ number = 7, colour = "C_7" },
-                           new Card(){ number = 8, colour = "C_8" },
-                           new Card(){ number = 9, colour = "C_9" },
-                           new Card(){ number = 10, colour = "C_10" },
-                           new Card(){ number = 11, colour = "C_J" },
-                           new Card(){ number = 12, colour = "C_Q" },
-                           new Card(){ number = 13, colour = "C_K" },
+                           new Card(){ number = 1, colour = "Ace of hearts" },
+                           new Card(){ number = 2, colour = "Two of hearts" },
+                           new Card(){ number = 3, colour = "Three of hearts" },
+                           new Card(){ number = 4, colour = "Four of hearts" },
+                           new Card(){ number = 5, colour = "Five of hearts" },
+                           new Card(){ number = 6, colour = "Six of hearts" },
+                           new Card(){ number = 7, colour = "Seven of hearts" },
+                           new Card(){ number = 8, colour = "Eight of hearts" },
+                           new Card(){ number = 9, colour = "Nive of hearts" },
+                           new Card(){ number = 10, colour = "Ten of hearts" },
+                           new Card(){ number = 10, colour = "Knight of hearts" },
+                           new Card(){ number = 10, colour = "Queen of hearts" },
+                           new Card(){ number = 10, colour = "King of hearts" },
+                           new Card(){ number = 1, colour = "Ace of Spades" },
+                           new Card(){ number = 2, colour = "Two of Spades" },
+                           new Card(){ number = 3, colour = "Three of Spades" },
+                           new Card(){ number = 4, colour = "Four of Spades" },
+                           new Card(){ number = 5, colour = "Five of Spades" },
+                           new Card(){ number = 6, colour = "Six of Spades" },
+                           new Card(){ number = 7, colour = "Seven of Spades" },
+                           new Card(){ number = 8, colour = "Eight of Spades" },
+                           new Card(){ number = 9, colour = "Nine of Spades" },
+                           new Card(){ number = 10, colour = "Ten of Spades" },
+                           new Card(){ number = 10, colour = "Knigt of Spades" },
+                           new Card(){ number = 10, colour = "Queen of Spades" },
+                           new Card(){ number = 10, colour = "King of Spades" },
+                           new Card(){ number = 1, colour = "Ace of diamonds" },
+                           new Card(){ number = 2, colour = "Two of diamonds" },
+                           new Card(){ number = 3, colour = "Three of diamonds" },
+                           new Card(){ number = 4, colour = "Four of diamonds" },
+                           new Card(){ number = 5, colour = "Five of diamonds" },
+                           new Card(){ number = 6, colour = "Six of diamonds" },
+                           new Card(){ number = 7, colour = "Seven of diamonds" },
+                           new Card(){ number = 8, colour = "Eight of diamonds" },
+                           new Card(){ number = 9, colour = "Nine of diamonds" },
+                           new Card(){ number = 10, colour = "Ten of diamonds" },
+                           new Card(){ number = 10, colour = "Knight of diamonds" },
+                           new Card(){ number = 10, colour = "Queen of diamonds" },
+                           new Card(){ number = 10, colour = "King of diamonds" },
+                           new Card(){ number = 1, colour = "Ace of clubs" },
+                           new Card(){ number = 2, colour = "Two of clubs" },
+                           new Card(){ number = 3, colour = "Three of clubs" },
+                           new Card(){ number = 4, colour = "Four of clubs" },
+                           new Card(){ number = 5, colour = "Five of clubs" },
+                           new Card(){ number = 6, colour = "Six of clubs" },
+                           new Card(){ number = 7, colour = "Seven of clubs" },
+                           new Card(){ number = 8, colour = "Eight of clubs" },
+                           new Card(){ number = 9, colour = "Nine of clubs" },
+                           new Card(){ number = 10, colour = "Ten of clubs" },
+                           new Card(){ number = 10, colour = "Knight of clubs" },
+                           new Card(){ number = 10, colour = "Thot of clubs" },
+                           new Card(){ number = 10, colour = "King of clubs" },
 
             };
 
@@ -195,12 +195,11 @@ namespace kortlek21
                             int i = 0;
 
                             if (answerThreeLow == "yes")
-                                {
+                            {
                                     //int count = 1;
 
                                     while(points < 21)
                                     {
-
                                    
                                         points = points + cardDeck[i].number;
                                     
@@ -210,7 +209,6 @@ namespace kortlek21
                                         String answerFour = Console.ReadLine();
                                         String answerFourLow = answerFour.ToLower();
                                         i++;   
-
 
 
                                         if (answerFourLow == "yes")
@@ -242,7 +240,7 @@ namespace kortlek21
                                         }
                                         else if (points == 21)
                                         {
-                                            Console.WriteLine("\nCONGRATZ YOU GOT 21\nYOU WON\nClaim your starfighter (=0=)");
+                                            Console.WriteLine("\nCONGRATZ YOU GOT 21\nYOU WON\nClaim your starfighter ...(=0=)...");
                                         //count = 1;
                                         break;
                                         }
@@ -251,7 +249,7 @@ namespace kortlek21
 
                                 
 
-                                }
+                            }
                         }
 
                         else if (answerTwoLow == "no")
