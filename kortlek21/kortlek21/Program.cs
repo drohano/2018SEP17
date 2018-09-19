@@ -202,7 +202,25 @@ namespace kortlek21
                                     {
                                    
                                         points = points + cardDeck[i].number;
-                                    
+                                    // kolla här
+
+                                        if (points > 21)
+                                        {
+                                            Console.WriteLine("\nBad luck you got {0} better luck next time\n", points);
+                                            //count = 0;
+                                            break;
+                                        }
+                                        else if (points < 21)
+                                        {
+                                            //count = 1;
+                                        }
+                                        else if (points == 21)
+                                        {
+                                            Console.WriteLine("\nCONGRATZ YOU GOT 21\nYOU WON\nClaim your starfighter ...(=0=)...");
+                                            //count = 1;
+                                            break;
+                                        }
+
                                         Console.WriteLine("\nYou pulled {0} your current score is {1}", cardDeck[i].colour, points);                                       
                                         Console.WriteLine("Draw again?\n YES  /  NO\n");                                                                                         
 
@@ -228,22 +246,8 @@ namespace kortlek21
                                         break;
                                         }
 
-                                        if (points > 21)
-                                        {
-                                            Console.WriteLine("\nBad luck you got {0} better luck next time\n", points);
-                                        //count = 0;
-                                        break;
-                                        }
-                                        else if (points < 21)
-                                        {
-                                            //count = 1;
-                                        }
-                                        else if (points == 21)
-                                        {
-                                            Console.WriteLine("\nCONGRATZ YOU GOT 21\nYOU WON\nClaim your starfighter ...(=0=)...");
-                                        //count = 1;
-                                        break;
-                                        }
+                                        
+                                       
 
                                     }
 
