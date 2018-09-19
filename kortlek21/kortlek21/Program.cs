@@ -27,86 +27,91 @@ namespace kortlek21
                 {
                     case 'a':
 
+
+                        Console.WriteLine("\nHere is your deck in a random order\n");
+
                         //Creates a Deck of cards.
 
-                        List<string> cardDeck = new List<string>
+                        IList<Card> cardDeck = new List<Card>()
                         {
-                            "[S_A]",
-                            "[S_2]",
-                            "[S_3]",
-                            "[S_4]",
-                            "[S_5]",
-                            "[S_6]",
-                            "[S_7]",
-                            "[S_8]",
-                            "[S_9]",
-                            "[S_10]",
-                            "[S_J]",
-                            "[S_Q]",
-                            "[S_K]",
-                            "[H_A]",
-                            "[H_2]",
-                            "[H_3]",
-                            "[H_4]",
-                            "[H_5]",
-                            "[H_6]",
-                            "[H_7]",
-                            "[H_8]",
-                            "[H_9]",
-                            "[H_10]",
-                            "[H_J]",
-                            "[H_Q]",
-                            "[H_K]",
-                            "[C_A]",
-                            "[C_2]",
-                            "[C_3]",
-                            "[C_4]",
-                            "[C_5]",
-                            "[C_6]",
-                            "[C_7]",
-                            "[C_8]",
-                            "[C_9]",
-                            "[C_10]",
-                            "[C_J]",
-                            "[C_Q]",
-                            "[C_K]",
-                            "[D_A]",
-                            "[D_2]",
-                            "[D_3]",
-                            "[D_4]",
-                            "[D_5]",
-                            "[D_6]",
-                            "[D_7]",
-                            "[D_8]",
-                            "[D_9]",
-                            "[D_10]",
-                            "[D_J]",
-                            "[D_Q]",
-                            "[D_K]"
+                           new Card(){ number = 1, colour = "H_A" },
+                           new Card(){ number = 2, colour = "H_2" },
+                           new Card(){ number = 3, colour = "H_3" },
+                           new Card(){ number = 4, colour = "H_4" },
+                           new Card(){ number = 5, colour = "H_5" },
+                           new Card(){ number = 6, colour = "H_6" },
+                           new Card(){ number = 7, colour = "H_7" },
+                           new Card(){ number = 8, colour = "H_8" },
+                           new Card(){ number = 9, colour = "H_9" },
+                           new Card(){ number = 10, colour = "H_10" },
+                           new Card(){ number = 11, colour = "H_J" },
+                           new Card(){ number = 12, colour = "H_Q" },
+                           new Card(){ number = 13, colour = "H_K" },
+                           new Card(){ number = 1, colour = "S_A" },
+                           new Card(){ number = 2, colour = "S_2" },
+                           new Card(){ number = 3, colour = "S_3" },
+                           new Card(){ number = 4, colour = "S_4" },
+                           new Card(){ number = 5, colour = "S_5" },
+                           new Card(){ number = 6, colour = "S_6" },
+                           new Card(){ number = 7, colour = "S_7" },
+                           new Card(){ number = 8, colour = "S_8" },
+                           new Card(){ number = 9, colour = "S_9" },
+                           new Card(){ number = 10, colour = "S_10" },
+                           new Card(){ number = 11, colour = "S_J" },
+                           new Card(){ number = 12, colour = "S_Q" },
+                           new Card(){ number = 13, colour = "S_K" },
+                           new Card(){ number = 1, colour = "D_A" },
+                           new Card(){ number = 2, colour = "D_2" },
+                           new Card(){ number = 3, colour = "D_3" },
+                           new Card(){ number = 4, colour = "D_4" },
+                           new Card(){ number = 5, colour = "D_5" },
+                           new Card(){ number = 6, colour = "D_6" },
+                           new Card(){ number = 7, colour = "D_7" },
+                           new Card(){ number = 8, colour = "D_8" },
+                           new Card(){ number = 9, colour = "D_9" },
+                           new Card(){ number = 10, colour = "D_10" },
+                           new Card(){ number = 11, colour = "D_J" },
+                           new Card(){ number = 12, colour = "D_Q" },
+                           new Card(){ number = 13, colour = "D_K" },
+                           new Card(){ number = 1, colour = "C_A" },
+                           new Card(){ number = 2, colour = "C_2" },
+                           new Card(){ number = 3, colour = "C_3" },
+                           new Card(){ number = 4, colour = "C_4" },
+                           new Card(){ number = 5, colour = "C_5" },
+                           new Card(){ number = 6, colour = "C_6" },
+                           new Card(){ number = 7, colour = "C_7" },
+                           new Card(){ number = 8, colour = "C_8" },
+                           new Card(){ number = 9, colour = "C_9" },
+                           new Card(){ number = 10, colour = "C_10" },
+                           new Card(){ number = 11, colour = "C_J" },
+                           new Card(){ number = 12, colour = "C_Q" },
+                           new Card(){ number = 13, colour = "C_K" },
+
                         };
 
 
                         //Shuffles the list.
                         
-                        RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider();
-                        int n = cardDeck.Count;
-                        while (n > 1)
-                        {
-                            byte[] box = new byte[1];
-                            do provider.GetBytes(box);
-                            while (!(box[0] < n * (Byte.MaxValue / n)));
-                            int k = (box[0] % n);
-                            n--;
-                            String value = cardDeck[k];
-                            cardDeck[k] = cardDeck[n];
-                            cardDeck[n] = value;
-                        }
+                           RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider();
+                            int n = cardDeck.Count;
+                            while (n > 1)
+                            {
+                                byte[] box = new byte[1];
+                                do provider.GetBytes(box);
+                                while (!(box[0] < n * (Byte.MaxValue / n)));
+                                int k = (box[0] % n);
+                                n--;
+                                Card value = cardDeck[k];
+                                cardDeck[k] = cardDeck[n];
+                                cardDeck[n] = value;
+                            }
+
                         //Prints out the carddeck.
 
                         foreach(var card in cardDeck)
                         {
                             
-                            Console.WriteLine(card);
+                            Console.WriteLine(card.colour);
                         
                         }
 
@@ -117,6 +122,15 @@ namespace kortlek21
                         break;
 
                     case 'b':
+                        // note to future johan
+                        //create a dictonary to assign vaules to the list 
+                        //split korten, [s_5] = [s_/5] , ge sedan 5 = int 5.
+                        // något åt det hållet, from johan in da past
+
+
+
+
+
 
                         start = 1;
                         break;
@@ -143,4 +157,12 @@ namespace kortlek21
 
         }
     }
+    public class Card
+    {
+        public int number { get; set; }
+        public string colour { get; set; }
+
+    }
+
+
 }
